@@ -59,4 +59,5 @@ cleaned_df = clean(combined_df)
 final_df = cleaned_df[['date', 'year','month','day', 'sales', 'region']]
 print(final_df.head())
 
-
+#write to csv
+final_df.to_csv('cleaned_sales_data.csv', index=False)
